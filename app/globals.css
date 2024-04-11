@@ -1,33 +1,39 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  @layer base {
+    :root {
+      --background: 229 27% 8%;
+      --foreground: 227 9% 60%;
+      --muted: 229 12% 15%;
+      --muted-foreground: 229 12% 65%;
+      --popover: 229 27% 5%;
+      --popover-foreground: 227 9% 70%;
+      --card: 229 27% 6%;
+      --card-foreground: 227 9% 65%;
+      --border: 229 17% 13%;
+      --input: 229 17% 16%;
+      --primary: 174 42% 65%;
+      --primary-foreground: 174 42% 5%;
+      --secondary: 174 30% 25%;
+      --secondary-foreground: 174 30% 85%;
+      --accent: 229 27% 23%;
+      --accent-foreground: 229 27% 83%;
+      --destructive: 0 96% 50%;
+      --destructive-foreground: 0 0% 100%;
+      --ring: 174 42% 65%;
+      --radius: 0.5rem
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
   }
-}
