@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const LinkedinIcon = (
+export const TsIcon = (
     props: ComponentPropsWithoutRef<"svg"> & { size?: number }
 ) => {
     return (
