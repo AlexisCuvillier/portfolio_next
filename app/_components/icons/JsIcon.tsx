@@ -1,8 +1,9 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const JsIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: number}) => {
+export const JsIcon = (props: ComponentPropsWithoutRef<"svg"> & {size?: number} & {radius?: string}) => {
     return (
         <svg
+            className={props.radius}
             width={props.size}
             height={props.size}
             viewBox="0 0 256 256"

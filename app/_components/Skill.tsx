@@ -13,6 +13,7 @@ import {
     CardContent,
     CardDescription,
     CardHeader,
+    CardImage,
     CardTitle,
 } from "@/components/ui/card";
 
@@ -30,6 +31,7 @@ interface Formation {
     date: string;
     titre: string;
     name: string;
+    img:string;
 }
 
 const tech: Icon[] = [
@@ -80,35 +82,41 @@ const tech: Icon[] = [
 const form: Formation[] = [
     {
         id: 1,
-        school: "3w Academy",
+        school: "RNCP niveau 7",
         date: "En cours 📅",
-        titre: "recherche alternance en cours ⏳",
+        titre: "recherche d'alternance en cours ⏳",
         name: "Expert en Systèmes d'Information",
+        img:"https://3wacademy.fr/assets/img/logo-3wa-ecole-code-numerique.svg"
     },
     {
         id: 2,
-        school: "Simplon",
+        school: "RNCP niveau 6",
         date: "2022 - 2023 📅",
         titre: "titre pro: ✅",
         name: "Concepteur Développeur d'Application",
+        img:"https://simplon.co/images/logo.svg"
     },
     {
         id: 3,
-        school: "Simplon",
+        school: "RNCP niveau 5",
         date: "2021 - 2022 📅",
         titre: "titre pro: ✅",
         name: "Développeur Web et Web Mobile",
+        img:"https://simplon.co/images/logo.svg"
     },
 ];
 
 export const Skill = () => {
     return (
         <Section className="flex max-md:flex-col items-start">
-            <div className="flex-grow w-1/3 ">
-                <h3 className="text-2xl font-caption text-primary">Compétences:</h3>
+            <div className="flex-[2] w-full ">
+                <h3 className="text-2xl font-caption text-primary">
+                    Compétences:
+                </h3>
                 <ul>
                     {tech.map((icon: Icon) => (
                         <Link
+                            target="_blank"
                             key={icon.id}
                             href={icon.link}
                             className={cn(
@@ -122,21 +130,30 @@ export const Skill = () => {
                     ))}
                 </ul>
             </div>
-            <div className="flex-grow w-2/3 ">
-                <h3 className="text-2xl font-caption text-primary">Formations:</h3>
-                <div className=" border-l-2 pl-4">
-
-                {form.map((formation) => (
-                    <Card className="my-2" key={formation.id}>
-                        <CardHeader>
-                            <CardTitle>{formation.date}</CardTitle>
-                            <CardDescription>
-                                {formation.school} • {formation.name} (
-                                {formation.titre}){" "}
-                            </CardDescription>
-                        </CardHeader>
-                    </Card>
-                ))}
+            <div className="flex-[3] w-full ">
+                <h3 className="text-2xl font-caption text-primary">
+                    Formations:
+                </h3>
+                <div className="flex-col">
+                    {form.map((formation) => (
+                        <Card className="my-2" key={formation.id}>
+                            <div className="flex">
+                                <CardImage
+                                    src={`${formation.img}`}
+                                    className="bg-muted-foreground rounded-l-xl p-2"
+                                    style={{ width: 90, height: "auto" }}
+                                    alt=""
+                                />
+                                <CardHeader>
+                                    <CardTitle>{formation.date}</CardTitle>
+                                    <CardDescription>
+                                        {formation.school} • {formation.name} (
+                                        {formation.titre}){" "}
+                                    </CardDescription>
+                                </CardHeader>
+                            </div>
+                        </Card>
+                    ))}
                 </div>
             </div>
         </Section>
