@@ -12,7 +12,7 @@ const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
 };
 export const Hero = () => {
     return (
-        <Section className="flex max-md:flex-col items-start">
+        <Section className="flex max-md:flex-col max-md:justify-center max-md:items-center items-start">
             <div className="flex-[2]">
                 <h2 className="font-caption text-5xl text-primary mb-2">
                     Alexis Cuvillier
@@ -27,7 +27,7 @@ export const Hero = () => {
                 Parallèlement, ayant terminé deuxième lors de l'Océan Hackathon de Boulogne-sur-Mer 2022, nous travaillons, avec d'anciens camarades de ma précédente formation, sur une application mobile touristique.
                 </p>
             </div>
-            <div className="flex-1 ">
+            <div className="flex-1">
                 <img
                     src="https://res.cloudinary.com/dj25e78gvx/image/upload/v1712827514/me-removebg-preview_gha2ql.png"
                     alt="alexis photo"
