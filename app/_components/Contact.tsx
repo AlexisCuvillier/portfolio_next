@@ -7,8 +7,8 @@ import { CiCalendarDate } from "react-icons/ci";
 export const Contact = () => {
     return (
         <Section className="flex flex-col ">
-            <h3 className="text-2xl font-caption text-primary">Contact</h3>
-            <div className="flex align-middle justify-center ">
+            <h3 className="text-2xl font-caption text-primary mb-12">Contact</h3>
+            <div className="flex align-middle justify-center gap-8 ">
                 <Link
                     className={cn(
                         buttonVariants({ variant: "outline" }),
