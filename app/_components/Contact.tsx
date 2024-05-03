@@ -8,7 +8,7 @@ export const Contact = () => {
     return (
         <Section className="flex flex-col ">
             <h3 className="text-2xl font-caption text-primary mb-12">Contact</h3>
-            <div className="flex align-middle justify-center gap-8 ">
+            <div className="flex align-middle justify-center max-sm:flex-col ">
                 <Link
                     className={cn(
                         buttonVariants({ variant: "outline" }),

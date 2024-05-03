@@ -130,7 +130,7 @@ export const Skill = () => {
                     ))}
                 </ul>
             </div>
-            <div className="flex-[3] w-full ">
+            <div className="flex-[3] w-full max-md:mt-8 ">
                 <h3 className="text-2xl font-caption text-primary">
                     Formations:
                 </h3>
