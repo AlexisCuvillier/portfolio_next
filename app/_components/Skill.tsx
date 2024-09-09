@@ -140,7 +140,7 @@ export const Skill = () => {
                             <div className="flex">
                                 <CardImage
                                     src={`${formation.img}`}
-                                    className="bg-muted-foreground rounded-l-xl p-2"
+                                    className="rounded-l-xl p-2 bg-white "
                                     style={{ width: 90, height: "auto" }}
                                     alt=""
                                 />
