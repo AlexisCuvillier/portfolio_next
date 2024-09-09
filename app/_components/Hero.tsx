@@ -18,10 +18,10 @@ export const Hero = () => {
                     Alexis Cuvillier
                 </h2>
                 <h3 className="font-caption text-3xl mb-2 ">
-                    Expert en systèmes d'informations
+                    Développeur Web
                 </h3>
                 <p className="mb-2">
-                Passionné de programmation depuis mon enfance, j'ai débuté en développant des scripts pour un jeu lors de mes sessions de botting. Lors de ma reconversion, je me suis orienté vers le développement et ai obtenu un diplôme de développeur full stack & concepteur d'applications. Prochainement, je suivrai une formation d'Expert en systèmes d'information (équivalent bac +5).
+                Passionné de programmation depuis mon enfance, j'ai commencé en développant des scripts pour un jeu lors de mes sessions de botting. Dans le cadre de ma reconversion professionnelle, je me suis orienté vers le développement et ai obtenu un diplôme de développeur full stack et concepteur d'applications. J'ai ensuite décidé de poursuivre mon apprentissage en réalisant une pré-MSc/MSc au sein d'Epitech Lille.
                 </p>
                 <p >
                 Parallèlement, ayant terminé deuxième lors de l'Océan Hackathon de Boulogne-sur-Mer 2022, nous travaillons, avec d'anciens camarades de ma précédente formation, sur une application mobile touristique.

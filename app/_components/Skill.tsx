@@ -83,10 +83,10 @@ const form: Formation[] = [
     {
         id: 1,
         school: "RNCP niveau 7",
-        date: "En cours 📅",
+        date: "2024 - 2027 📅",
         titre: "recherche d'alternance en cours ⏳",
-        name: "Expert en Systèmes d'Information",
-        img:"https://3wacademy.fr/assets/img/logo-3wa-ecole-code-numerique.svg"
+        name: "Pré MSC/MSC",
+        img:"https://mon.orientest.fr/img/agenda/0/1/16/78/visuel_11678.png"
     },
     {
         id: 2,

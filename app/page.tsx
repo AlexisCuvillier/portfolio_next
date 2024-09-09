@@ -13,7 +13,7 @@ export default function Home() {
   return (
 
    <main>
-    <TracingBeam className="" >
+    <TracingBeam  >
     <Header />
     <Spacing size ="md" />
 
