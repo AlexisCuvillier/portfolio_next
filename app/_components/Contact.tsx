@@ -20,9 +20,8 @@ export const Contact = () => {
                         <CiMail size={25} />
                         <p className="ml-2 mt-1 text-center">Envoyer un mail</p>
                     </div>
-                   
                 </Link>
-                <Link
+                {/* <Link
                     className={cn(
                         buttonVariants({ variant: "outline" }),
                         "p-2 flex-col mb-2 ml-2 mt-2"
@@ -36,7 +35,7 @@ export const Contact = () => {
                     <CiCalendarDate size={25}   />
                     <p className="ml-2 mt-1 text-center">Réserver un crénau</p>
                     </div>
-                </Link>
+                </Link>  */}
             </div>
         </Section>
     );
