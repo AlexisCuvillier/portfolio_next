@@ -1,15 +1,19 @@
-import Link from "next/link";
+// import Link from "next/link";
 import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { CiMail } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
+import { z } from "zod";
+import { FormContact } from "./FormContact";
+
 export const Contact = () => {
-    return (
-        <Section className="flex flex-col ">
-            <h3 className="text-2xl font-caption text-primary mb-12">Contact</h3>
-            <div className="flex align-middle justify-center max-sm:flex-col ">
-                <Link
+  return (
+    <Section className="flex flex-col ">
+      <h3 className="text-2xl font-caption text-primary mb-12">Contact</h3>
+      <div className="flex align-middle justify-center flex-col ">
+        <FormContact />
+        {/* <Link
                     className={cn(
                         buttonVariants({ variant: "outline" }),
                         "p-2 flex-col mb-2 ml-2 mt-2"
@@ -20,8 +24,8 @@ export const Contact = () => {
                         <CiMail size={25} />
                         <p className="ml-2 mt-1 text-center">Envoyer un mail</p>
                     </div>
-                </Link>
-                {/* <Link
+                // // </Link> */}
+        {/* <Link
                     className={cn(
                         buttonVariants({ variant: "outline" }),
                         "p-2 flex-col mb-2 ml-2 mt-2"
@@ -36,7 +40,7 @@ export const Contact = () => {
                     <p className="ml-2 mt-1 text-center">Réserver un crénau</p>
                     </div>
                 </Link>  */}
-            </div>
-        </Section>
-    );
+      </div>
+    </Section>
+  );
 };

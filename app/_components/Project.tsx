@@ -141,7 +141,7 @@ export const Project = () => {
                             </div>
                             <div className="flex flex-col items-center gap-1 ">
                                 <MongoIcon radius="rounded-md" size={32} />
-                                <p className="text-sm">Express</p>
+                                <p className="text-sm">MongoDb</p>
                             </div>
                         </div>
                         <Link aria-disabled target="blank" href="https://github.com/AlexisCuvillier/code_book_API" className={cn(buttonVariants({variant: "outline"}),  "p-2 flex-col mb-2 ml-2 mt-2")} >
